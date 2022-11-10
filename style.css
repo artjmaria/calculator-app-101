@@ -2,4 +2,13 @@ body {
   margin: 20% auto;
   width: 50%;
   height: 75%;
+  text-align: center;
+  background-color: lightskyblue;
+  
+}
+
+form {
+  border: 3px solid lightcoral;
+  padding: 20%;
+  background-color: lightseagreen;
 }

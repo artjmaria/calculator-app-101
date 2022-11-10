@@ -8,19 +8,20 @@
   <title>Document</title>
 </head>
 <body>
+  <h1>CALCULATOR</h1>
   <form class="calculator">
     <label for="first-number">First Number:</label>
     <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
     <input type="number" id="first-Number" name="first-Number" placeholder="type the first number" value="" onkeyup="saveFirstNumber(this.value)">
     <label for="second-number">Second Number:</label>
-    <input type="number" id="second-Number" name="second-Number" placeholder="type the second number" onkeyup="saveSecondNumber(this.value)">
+    <input type="number" id="second-Number" name="second-Number" placeholder="type the second number" value="" onkeyup="saveSecondNumber(this.value)">
     <div>
       <!-- the "onclick" event listener passes its element's "id" to the "changeOperation" function in the main.js file -->
       <button type="button" name="add" id="addition" onclick="changeOperation(this.id)">Add</button>
       <button type="button" name="subtract" id="subtraction" onclick="changeOperation(this.id)">Subtract</button>
-      <button type="button" name="multiply" id="multiplication">Multiply</button>
-      <button type="button" name="divide" id="division">Divide</button>
-      <button type="button" name="modulus" id="modulus">Modulus</button>
+      <button type="button" name="multiply" id="multiplication" onclick="changeOperation(this.id)">Multiply</button>
+      <button type="button" name="divide" id="division" onclick="changeOperation(this.id)">Divide</button>
+      <button type="button" name="modulus" id="modulus" onclick="changeOperation(this.id)">Modulus</button>
     </div>
     <br>
     <!-- this "onclick" calls the "equal" function in the main.js file -->

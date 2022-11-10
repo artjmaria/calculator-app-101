@@ -30,15 +30,35 @@ const subtract = (numA, numB) => {
 // These variables are already defined but that don't point to functions. It's up to you to build the functions to complete your calculator use:
 
 const multiply = (numA, numB) => {
+
+  const product = numA * numB
+  return product
+  console.log(numA, numB)
+  
+}
   // * to get a product then return it
   // Open up the inspector tool in Chrome and select the Console tab to see what this functions is "logging out" to the console.
-  console.log(numA, numB)
+  // console.log(numA, numB)
+
+
+const divide = (numA, numB) => {
+
+  const quotient = numA / numB
+  return quotient
+
 }
 
-const divide = null
 // / to get a quotient,
 
-const modulus = null
+const modulus = (numA, numB) => {
+
+  const modulus = numA % numB
+  return modulus
+
+}
+
+
+
 // and % to get a remainder.
 
 // This function changes the "operation" variable to be equal to the "id" of the button we choose on the web page.
@@ -64,11 +84,11 @@ const equals = () => {
     break;
     case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
     break;
-    case "multiplication": multiply(firstNum, secondNum) 
+    case "multiplication": putResultInElement(multiply(firstNum, secondNum)) 
     break;
-    case "division": console.log(divide(firstNum, secondNum)) 
+    case "division": putResultInElement(divide(firstNum, secondNum)) 
     break;
-    case "modulus": console.log(modulus(firstNum, secondNum)) 
+    case "modulus": putResultInElement(modulus(firstNum, secondNum)) 
     break;
     default: "Choose an operation"
   }
